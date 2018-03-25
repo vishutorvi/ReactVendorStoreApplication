@@ -68,7 +68,7 @@ export default class Crud extends React.Component{
     }
     componentDidMount(){
         let value = []
-        var url = "http://52.91.233.77:8080/products/all";
+        var url = "http://ec2-52-91-233-77.compute-1.amazonaws.com:8080/products/all";
         Request.get(url).then((response) =>{
             response.body.forEach(function(key){
                 value.push(key)
@@ -91,7 +91,7 @@ export default class Crud extends React.Component{
     }  
     handleShowProducts(){
         let value = []
-        var url = "http://52.91.233.77:8080/products/all";
+        var url = "http://ec2-52-91-233-77.compute-1.amazonaws.com:8080/products/all";
         Request.get(url).then((response) =>{
             //alert("String")
             response.body.forEach(function(key){
@@ -110,7 +110,7 @@ export default class Crud extends React.Component{
        // alert("Deleted!!!");
         let value = [];
         var deletedSuccessfully = this.state.deletedSuccessfully;
-        var url = "http://52.91.233.77:8080/products/deleteIds";
+        var url = "http://ec2-52-91-233-77.compute-1.amazonaws.com:8080/products/deleteIds";
         Request
         .post(url)
         .send({ids:this.state.deleteIds})
@@ -215,7 +215,7 @@ export default class Crud extends React.Component{
         this.setState({modalIsOpen: false});
        let value = [];
         var deletedSuccessfully = this.state.deletedSuccessfully;
-        var url = "http://52.91.233.77:8080/products/create";
+        var url = "http://ec2-52-91-233-77.compute-1.amazonaws.com:8080/products/create";
         Request
         .post(url)
         .send({"productName":this.state.newName,"productVendor":this.state.newVendor,"quantityInStock":this.state.newQuantity,"buyPrice":this.state.newBuyPrice,"msrp":this.state.newMrp})
