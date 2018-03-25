@@ -1,0 +1,24 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-edit-inline": "^1.0.8",
+    "react-editable-input": "^1.0.0",
+    "react-modal": "^3.3.2",
+    "react-notifications": "^1.4.3",
+    "react-scripts": "1.1.1",
+    "react-table": "^6.8.0",
+    "react-wysiwyg": "^2.2.1",
+    "reactstrap": "^5.0.0",
+    "superagent": "^3.8.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
